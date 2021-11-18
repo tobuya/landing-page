@@ -7,7 +7,12 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex: 1;
+    flex: 1 1 auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -17,13 +22,14 @@ body {
     flex-direction: column;
     color: white;
     padding: 0 60px;
+    flex: 1 1 0;
 }
 
 .header {
     display: flex;
     align-items: flex-start;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 .logo {
     font-size: 24px;
@@ -56,12 +62,12 @@ li {
     flex-direction: column;
 }
 .title {
-    font-size: 48px;
+    font-size: 30px;
     font-weight: bolder;
     color: #f9faf8;
 }
 .subtext {
-    font-size: 18px;
+    font-size: 15px;
     color: #e5e7eb;
 }
 .buttonA {
@@ -78,10 +84,11 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 600px;
 }
 
 .random {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
     color: #1f2937;
     margin-bottom: 32px;
@@ -94,14 +101,14 @@ li {
     gap: 40px;
 }
 .below {
-    max-width: 200px;
+    max-width: 130px;
     display: flex;
     flex-direction: column;
 }
 .text {
     font-size: 18px;
     color: black;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .img {
     border-radius: 8px;
@@ -117,13 +124,14 @@ li {
     justify-content: center;
 }
 .paragraph {
-    font: 36px light italic;
+    font: 15px light italic;
     color: #1f2937;
 }
 .name {
     align-self: flex-end;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 
@@ -131,8 +139,6 @@ li {
     display: flex;
     text-align: center;
     justify-content: center;
-    max-width: 800px;
-    max-height: 200px;
 }
 
 .sec-d {
