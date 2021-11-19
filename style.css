@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     height: 100vh;
     margin: 20px;
@@ -6,7 +9,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-    text-align: center;
     flex: 1 1 auto;
 }
 
@@ -54,12 +56,13 @@ li {
 
 .header-lower {
     display: flex;
-    gap: 30px;
-    flex: 1;
+    gap: 260px;
 }
 .left {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
 }
 .title {
     font-size: 30px;
@@ -80,18 +83,14 @@ li {
 
 
 .sectionB {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 600px;
+    text-align: center;
 }
 
 .random {
     font-size: 30px;
     font-weight: bolder;
     color: #1f2937;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .random-below {
@@ -102,8 +101,6 @@ li {
 }
 .below {
     max-width: 130px;
-    display: flex;
-    flex-direction: column;
 }
 .text {
     font-size: 18px;
@@ -126,27 +123,31 @@ li {
 .paragraph {
     font: 15px light italic;
     color: #1f2937;
+    margin-bottom: 0px;
+    padding: 20px;
 }
 .name {
     align-self: flex-end;
     font-size: 10px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 2px;
+    padding-right: 20px;
 }
 
 
 .sectionD {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    margin: 10px 200px;
 }
 
 .sec-d {
     display: flex;
-    justify-content: center;
-    text-align: center;
     background-color: #3882f6;
     color: white;
+    padding:10px 0 10px 30px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
 .side-a {
     display: flex;
@@ -155,14 +156,18 @@ li {
 .call {
     font-size: 10px;
     font-weight: bold;
+    margin-bottom: 2px;
 }
 .sign {
-    font-size: 5px;
+    font-size: 10px;
     font-weight: lighter;
+    margin-top: 0px;
 }
 .butt {
     text-align: center;
     border: 1px solid white;
+    padding: 2px 10px;
+    border-radius: 5px;
 }
 
 
