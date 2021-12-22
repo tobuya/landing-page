@@ -1,20 +1,23 @@
-* {
+*,
+*::after,
+*::before{
     box-sizing: border-box;
 }
+
+html {
+    height: 100%;
+}
 body {
-    height: 100vh;
-    margin: 20px;
-    padding: 0;
-    overflow: hidden;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    text-align: center;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
@@ -23,14 +26,13 @@ img {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 0 60px;
-    flex: 1 1 0;
+    padding: 20px 60px;
 }
 
 .header {
     display: flex;
     align-items: flex-start;
-    padding: 0;
+    padding: 10px 60px;
     margin-bottom: 20px;
 }
 .logo {
@@ -56,13 +58,17 @@ li {
 
 .header-lower {
     display: flex;
-    gap: 260px;
+    justify-content: space-between;
+    padding: 20px 60px;
+    flex: 1 1 0;
 }
 .left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 500px;
+    justify-content: space-evenly;
+    width: 500px;
+    flex: 1 1 0;
 }
 .title {
     font-size: 30px;
@@ -72,6 +78,7 @@ li {
 .subtext {
     font-size: 15px;
     color: #e5e7eb;
+    padding-left: 0px;
 }
 .buttonA {
     background-color: #4169e1;
