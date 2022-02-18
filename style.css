@@ -2,47 +2,45 @@
 *::after,
 *::before{
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
-html {
-    height: 100%;
-}
 body {
     font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
-
-img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
 
 .sectionA {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 20px 60px;
+
 }
 
 .header {
     display: flex;
     align-items: flex-start;
     padding: 10px 60px;
-    margin-bottom: 20px;
 }
-.logo {
-    font-size: 24px;
-    color: #f9faf8;
+#logo {
+    font-size: 50px;
+}
+.custom {
+    color: red;
+    font-weight: bolder;
+    padding: 4px;
+    background: palegoldenrod;
+    border-radius: 10px;
 }
 .right-links {
     margin-left: auto;
     font-size: 18px;
     color: #e5e7eb;
+    font-weight: bolder;
 }
 ul{
     list-style-type: none;
@@ -58,27 +56,23 @@ li {
 
 .header-lower {
     display: flex;
-    justify-content: space-between;
     padding: 20px 60px;
-    flex: 1 1 0;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: 500px;
-    flex: 1 1 0;
-}
+
 .title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     color: #f9faf8;
+    margin: 10px 10px 10px 0px;
 }
 .subtext {
-    font-size: 15px;
+    font-size: 20px;
     color: #e5e7eb;
     padding-left: 0px;
+    margin: 10px 10px 10px 0px;
 }
 .buttonA {
     background-color: #4169e1;
@@ -86,11 +80,23 @@ li {
     padding: 8px 16px;
     border-radius: 8px;
     color: white;
+    margin: 10px 10px 10px 0px;
+    font-weight: bolder;
 }
 
+img.right {
+    width: 25%;
+    height: 10%;
+}
+
+.left {
+    width: 30%;
+    height: auto;
+    text-align: left;
+}
 
 .sectionB {
-    text-align: center;
+    padding: 30px;
 }
 
 .random {
@@ -104,19 +110,21 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
-.below {
-    max-width: 130px;
+div.below {
+    width: 200px;
 }
 .text {
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     margin-top: 10px;
+    text-align: left;
 }
 .img {
     border-radius: 8px;
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -128,22 +136,24 @@ li {
     justify-content: center;
 }
 .paragraph {
-    font: 15px light italic;
+    font: 20px light italic;
     color: #1f2937;
     margin-bottom: 0px;
-    padding: 20px;
+    padding: 40px 60px 0px 60px;
+    text-align: left;
+    
 }
 .name {
     align-self: flex-end;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 2px;
-    padding-right: 20px;
+    margin-right: 70px;
 }
 
 
 .sectionD {
-    margin: 10px 200px;
+    margin: 40px 200px;
 }
 
 .sec-d {
@@ -151,7 +161,7 @@ li {
     background-color: #3882f6;
     color: white;
     padding:10px 0 10px 30px;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
@@ -159,22 +169,23 @@ li {
 .side-a {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 .call {
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: bolder;
     margin-bottom: 2px;
 }
 .sign {
-    font-size: 10px;
-    font-weight: lighter;
+    font-size: 20px;
     margin-top: 0px;
 }
 .butt {
     text-align: center;
-    border: 1px solid white;
-    padding: 2px 10px;
-    border-radius: 5px;
+    border: 2px solid white;
+    padding: 5px 20px;
+    border-radius: 7px;
+    font-weight: bolder;
 }
 
 
@@ -184,4 +195,5 @@ li {
     justify-content: center;
     background-color: #1f2937;
     color: white;
+    font-size: 20px;
 }
