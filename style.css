@@ -195,5 +195,10 @@ div.below {
     justify-content: center;
     background-color: #1f2937;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.buttonA:hover, .butt:hover{
+    background-color: aliceblue;
+    color: #1F2937;
 }
